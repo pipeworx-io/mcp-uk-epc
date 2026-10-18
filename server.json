@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/uk-epc",
+  "title": "Uk Epc",
+  "description": "UK Energy Performance Certificate (EPC) register MCP (fleet #3270).",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/uk-epc",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-uk-epc",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/uk-epc/mcp"
+    }
+  ]
+}
