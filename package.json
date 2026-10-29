@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-uk-epc",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "UK Energy Performance Certificate (EPC) register MCP (fleet #3270).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-uk-epc": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "uk-epc"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-uk-epc.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/uk-epc",
   "pipeworx": {
-    "sourceHash": "v1-c55a1c840a840cf96aa8321e24ec64f16e448a66bb93dd3da049985daea33f96",
-    "sourceCommit": "0f33463aa47677f38e4f177a4b4a7160dd80819f"
+    "mode": "gateway",
+    "slug": "uk-epc",
+    "gatewaySlug": "uk-epc",
+    "sourceHash": "v1-8b1e11b2ee43d87fb757dff9668a8686b085996de22b21baea0eb7cf7386d4bb",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
