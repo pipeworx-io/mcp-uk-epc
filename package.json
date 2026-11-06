@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-uk-epc",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "UK Energy Performance Certificate (EPC) register MCP (fleet #3270).",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "uk-epc",
     "gatewaySlug": "uk-epc",
-    "sourceHash": "v1-8b1e11b2ee43d87fb757dff9668a8686b085996de22b21baea0eb7cf7386d4bb",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-618b23438691e6936756ec5bc14ac72b516722c51e7da3ce8a84a6c3d58a0df7",
+    "sourceCommit": "ca52e7ed1e1ccad897c2da1b0fa105edc0bc3b2e"
   }
 }
